@@ -133,12 +133,12 @@ footer {
   color: black;
   display: block;
   text-decoration: none;
-  margin-top: 40px;
+  margin-top: 20px;
 } 
 .article-container .boton {
   background:#45546c;
   border-radius:5px;
-  margin-top: 50px;
+  margin-top: auto;
   padding:10px 20px;
   color:#fffbcb;
   display:inline-block;
