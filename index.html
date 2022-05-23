@@ -23,25 +23,25 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
+                  <li class="nav-item boton">
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item boton">
                     <a class="nav-link" href="./secciones/tortas.html">Tortas</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item boton">
                     <a class="nav-link" href="./secciones/eventos.html">Eventos</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item boton">
                     <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item boton">
                     <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
                   </li>
             </div>
           </nav>
     </header>
-    <main> 
+    <main class="main"> 
         <section id="banner">
             <figure class="mainBanner">
                 <img src="./Img/Banner.jpg" alt="Banner">
@@ -50,21 +50,86 @@
                 Boutique dedicada a la elaboración de tortas artesanales, tortas personalizadas, cupcakes, mesas dulces, eventos, tortas para casamiento y mucho más.
             </h2>
         </section>
-        <div class="main">
-        <section>
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./Img/Lemon Pie Index.jpg" class="rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Img/Brownie Index.jpg" class=" rounded mx-auto d-block" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./Img/Cheesecake Index.jpg" class=" rounded mx-auto d-block" alt="...">
+<div
+  id="carouselMultiItemExample"
+  class="carousel slide carousel-dark text-center"
+  data-mdb-ride="carousel"
+>
+  <!-- Controls -->
+  <div class="d-flex justify-content-center mb-4">
+    <button
+      class="carousel-control-prev position-relative"
+      type="button"
+      data-mdb-target="#carouselMultiItemExample"
+      data-mdb-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next position-relative"
+      type="button"
+      data-mdb-target="#carouselMultiItemExample"
+      data-mdb-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img
+                src="./Img/Brownie Index.jpg"
+                class="card-img-top"
+                alt="Waterfall"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+
+                <a href="#!" class="btn btn-primary">Ver mas</a>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                src="./Img/Cheesecake Index.jpg"
+                class="card-img-top"
+                alt="Sunset Over the Sea"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <a href="#!" class="btn btn-primary">Ver mas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img
+                src="./Img/Lemon Pie Index.jpg"
+                class="card-img-top"
+                alt="Sunset over the Sea"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+
+                <a href="#!" class="btn btn-primary">Ver mas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Carousel wrapper -->
             <p>Tortas elaboradas con mucho amor y dedicacion. Nuestros 3 pilares en Notrepatisserie son el Lemon Pie, El Cheesecake y El Brownie con dulce de leche y merengue italiano. Que estas esperando para deleitarte con nuestras delicias culinarias?</p>
         </section>
     </div>
