@@ -185,6 +185,17 @@ hgroup {
 }
 /*-----------------------MEDIA QUERIES------------------------*/
 /*-----------------------DESKTOP------------------------*/
+@media (min-width: 1350px) and (max-width: 1532px) {
+  .site-container{
+    max-width: 1270px;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1234px) {
+  .site-container{
+    max-width: 940px;
+  }
+}
+
 @media (min-width: 900px) {
   .main {
     max-width: 1200px;
