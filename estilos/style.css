@@ -125,6 +125,16 @@ footer {
   color: #6b82a7;
   margin: 0;
 }
+.article-content .card-category {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin-top: 40px;
+} 
 .article-container .boton {
   background:#45546c;
   border-radius:5px;
@@ -135,7 +145,6 @@ footer {
   text-align:center;
   text-decoration: none;
 }
-
 /*-----------------------EVENTOS------------------------*/
 /*-----------------------MAIN------------------------*/
 .mainEventos {
@@ -269,4 +278,13 @@ hgroup {
     grid-template-rows: 220px 1fr;
   }
   
+  @media (max-width: 625px) {
+    .site-container{
+      max-width: 280px;
+    }
+    .article-card{
+      display: grid;
+      grid-template-rows: 220px 1fr;
+    }
+  }
 }
