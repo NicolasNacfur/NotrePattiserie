@@ -11,6 +11,14 @@ body {
 }
 /*-------------------HEADER/NAV--------------------*/
 
+.header nav ul li a {
+  text-decoration: none;
+  color: #fffbcb;
+  font-size: 25px;
+  transition: color 0.2s ease-in-out;
+}
+.header nav ul li a:hover {
+  color: black; }
 /*-------------------MAIN--------------------*/
 .main .mainBanner {
   display: flex;
@@ -38,6 +46,7 @@ body {
 .main p {
   font-size: 1.5rem;
   line-height: 1.6;
+  text-align: center;
 }
 /*-------------------FOOTER--------------------*/
 .footer {
@@ -64,22 +73,58 @@ footer {
   grid-area: footer;
 }
 /*-----------------------TORTAS------------------------*/
-.padre {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  row-gap: 20px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 20px auto;
+.site-container {
+  margin: 2rem;
+  max-width: calc(100% - 80px);
 }
-#tortas img {
-  border: 5px solid #45546c;
-  transition: all 0.3s ease-in-out;
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr)) ;
+  gap: 2rem;
 }
-#tortas figure:hover img {
-  transform: scale(1.2);
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+.article-card {
+  background: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.article-card:hover {
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+  cursor: pointer;
+}
+.article-content {
+  padding: 2rem;
+}
+.article-content .card-title {
+  margin: 1rem 0;
+  color: #22447b;
+}
+.article-content .card-excerpt {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6b82a7;
+  margin: 0;
+}
+.article-container .boton {
+  background:#45546c;
+  border-radius:5px;
+  margin-top: 50px;
+  padding:10px 20px;
+  color:#fffbcb;
+  display:inline-block;
+  text-align:center;
+  text-decoration: none;
+}
+
 /*-----------------------EVENTOS------------------------*/
 /*-----------------------MAIN------------------------*/
 .mainEventos {
@@ -141,6 +186,7 @@ hgroup {
     font-weight: 700;
     font-size: 1.5rem;
   }
+
 }
 /*-----------------------MOBILE------------------------*/
 @media (max-width: 900px) {
@@ -191,5 +237,12 @@ hgroup {
   #mainNosotros p {
     font-size: 15px;
     align-items: center;
+  }
+  .site-container{
+    max-width: 608px;
+  }
+  .article-card{
+    display: grid;
+    grid-template-rows: 220px 1fr;
   }
 }
