@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap");
+@import "variables";
+@import "generales";
+/*-----------------------INDEX------------------------*/
+/*-------------------MAIN--------------------*/
+.main .mainBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .main p {
+    display: flex;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .imagenes {
+    width: 340px;
+    height: 160px;
+  }
+  .main p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .main h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+/*-----------------------TORTAS------------------------*/
+.site-container {
+  margin: 2rem;
+  max-width: calc(100% - 80px);
+}
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(265px, 1fr)) ;
+  gap: 2rem;
+}
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+.article-card {
+  background: white;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.article-card:hover {
+  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+  cursor: pointer;
+}
+.article-content {
+  padding: 2rem;
+}
+.article-content .card-title {
+  margin: 1rem 0;
+  color: #22447b;
+}
+.article-content .card-excerpt {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6b82a7;
+  margin: 0;
+}
+.article-content .card-category {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: black;
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+} 
+.article-container .boton {
+  background:#45546c;
+  border-radius:5px;
+  margin-top: auto;
+  padding:10px 20px;
+  color:#fffbcb;
+  display:inline-block;
+  text-align:center;
+  text-decoration: none;
+}
+/*-----------------------EVENTOS------------------------*/
+/*-----------------------MAIN------------------------*/
+.mainEventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  iframe {
+    padding: 0 25px;
+    margin-bottom: 1rem;
+  }
+}
+/*-----------------------NOSOTROS------------------------*/
+/*-----------------------MAIN------------------------*/
+.main #mainNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+hgroup {
+  margin-bottom: 2rem;
+}
+/*-----------------------CONTACTO------------------------*/
+/*-----------------------MAIN------------------------*/
+.mainContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  .divUbicacion {
+    margin-top: 50px;
+  }
+}
+/*-----------------------MEDIA QUERIES------------------------*/
+/*-----------------------DESKTOP------------------------*/
+@media (min-width: 1350px) and (max-width: 1532px) {
+  .site-container{
+    max-width: 1270px;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1234px) {
+  .site-container{
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main {
+    max-width: 1200px;
+    margin: auto;
+  }
+  #banner {
+    width: 100vw;
+    max-width: 100%;
+    margin-bottom: 4rem;
+    img {
+        display: block;
+        width: 100%;
+  } }
+  #banner h2 {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+}
+/*-----------------------MOBILE------------------------*/
+@media (max-width: 900px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer>div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+  #banner img {
+    display: block;
+    width: 100%;
+  }
+  #banner h2 {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  .mainEventos iframe {
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  .main #mainNosotros {
+    text-align: center;
+    font-size: 15px;
+  }
+  .main #nuestroLocal {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+  }
+  #tortas div {
+    margin: 1rem auto;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    text-align: center;
+  }
+  #mainNosotros hgroup {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  #mainNosotros p {
+    font-size: 15px;
+    align-items: center;
+  }
+  .site-container{
+    max-width: 608px;
+  }
+  .article-card{
+    display: grid;
+    grid-template-rows: 220px 1fr;
+  }
+  
+  @media (max-width: 625px) {
+    .site-container{
+      max-width: 280px;
+    }
+    .article-card{
+      display: grid;
+      grid-template-rows: 220px 1fr;
+    }
+  }
+}
