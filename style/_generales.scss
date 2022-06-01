@@ -3,11 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /*-----------------------BODY------------------------*/
 body {
   font-family: "Roboto", sans-serif;
   background-color: #fffbcb;
 }
+
 /*-------------------HEADER/NAV--------------------*/
 
 .header nav ul li a {
@@ -16,8 +18,10 @@ body {
   font-size: 25px;
   transition: color 0.2s ease-in-out;
 }
+
 .header nav ul li a:hover {
-  color: black; }
+  color: black;
+}
 
 /*-------------------FOOTER--------------------*/
 .footer {
@@ -25,7 +29,7 @@ body {
   color: #fffbcb;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-evenly;
   margin-top: 100px;
   padding: 2rem 15px;
@@ -40,12 +44,15 @@ body {
     "galeria galeria"
     "footer footer";
 }
+
 header {
   grid-area: header;
 }
+
 main {
   grid-area: galeria;
 }
+
 footer {
   grid-area: footer;
 }
