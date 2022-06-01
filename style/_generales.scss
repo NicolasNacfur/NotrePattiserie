@@ -17,12 +17,10 @@ body {
   color: #fffbcb;
   font-size: 25px;
   transition: color 0.2s ease-in-out;
-}
-
-.header nav ul li a:hover {
+  &:hover {
   color: black;
 }
-
+}
 /*-------------------FOOTER--------------------*/
 .footer {
   background-color: #45546c;
@@ -34,6 +32,15 @@ body {
   margin-top: 100px;
   padding: 2rem 15px;
 }
+.footer #footerT {
+  text-decoration: none;
+  color: #fffbcb;
+  font-size: 25px;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: black; }
+}
+
 /*-----------------------LAYOUT------------------------*/
 body {
   display: grid;
