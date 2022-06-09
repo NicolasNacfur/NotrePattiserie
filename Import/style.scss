@@ -21,6 +21,12 @@
   }
 }
 
+@media (min-width: 902px) and (max-width: 938px) {
+  .site-container {
+    max-width: 620px;
+  }
+}
+
 @media (min-width: 900px) {
   .main {
     max-width: 1200px;
