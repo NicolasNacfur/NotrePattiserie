@@ -9,19 +9,16 @@
     grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
     gap: 2rem;
   }
-  
   .article-image {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px 20px 0 0;
+    }
   }
-  
-  .article-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px 20px 0 0;
-  }
-  
   .article-card {
     background: white;
     border-radius: 20px;

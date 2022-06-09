@@ -9,6 +9,11 @@
 
 /*-----------------------MEDIA QUERIES------------------------*/
 /*-----------------------DESKTOP------------------------*/
+@media (min-width: 1667px) and (max-width: 1829px) {
+  .site-container {
+    max-width: 1580px;
+  }
+}
 @media (min-width: 1350px) and (max-width: 1532px) {
   .site-container {
     max-width: 1270px;
@@ -128,7 +133,7 @@
     grid-template-rows: 220px 1fr;
   }
 
-  @media (max-width: 625px) {
+  @media (min-width: 300px) and (max-width: 900px){
     .site-container {
       max-width: 280px;
     }
