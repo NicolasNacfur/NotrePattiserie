@@ -274,7 +274,6 @@ footer {
 }
 
 /*-----------------------PRODUCCION------------------------*/
-/*-----------------------MAIN------------------------*/
 #produccionContenido {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,7 +384,6 @@ footer {
 }
 
 /*-----------------------NOSOTROS------------------------*/
-/*-----------------------MAIN------------------------*/
 .main #mainNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,7 +405,6 @@ hgroup {
 }
 
 /*-----------------------CONTACTO------------------------*/
-/*-----------------------MAIN------------------------*/
 .mainContact {
   display: -webkit-box;
   display: -ms-flexbox;

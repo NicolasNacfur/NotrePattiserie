@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap");
+@import "generales";
+@import "operaciones";
+@import "index";
+@import "tortas";
+@import "produccion";
+@import "nosotros";
+@import "contacto";
+/*-----------------------MEDIA QUERIES------------------------*/
+/*-----------------------DESKTOP------------------------*/
+@media (min-width: 1350px) and (max-width: 1532px) {
+  .site-container {
+    max-width: 1270px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1234px) {
+  .site-container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 900px) {
+  .main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #banner {
+    width: 100vw;
+    max-width: 100%;
+    margin-bottom: 4rem;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  #banner h2 {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+}
+
+/*-----------------------MOBILE------------------------*/
+@media (max-width: 900px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer>div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  #banner img {
+    display: block;
+    width: 100%;
+  }
+
+  #banner h2 {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .mainEventos iframe {
+    width: 100%;
+    padding: 0 25px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .main #mainNosotros {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .main #nuestroLocal {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  #tortas div {
+    margin: 1rem auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    text-align: center;
+  }
+
+  #mainNosotros hgroup {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  #mainNosotros p {
+    font-size: 15px;
+    align-items: center;
+  }
+
+  .site-container {
+    max-width: 608px;
+  }
+
+  .article-card {
+    display: grid;
+    grid-template-rows: 220px 1fr;
+  }
+
+  @media (max-width: 625px) {
+    .site-container {
+      max-width: 280px;
+    }
+
+    .article-card {
+      display: grid;
+      grid-template-rows: 220px 1fr;
+    }
+  }
+}
