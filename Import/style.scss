@@ -6,6 +6,7 @@
 @import "produccion";
 @import "nosotros";
 @import "contacto";
+
 /*-----------------------MEDIA QUERIES------------------------*/
 /*-----------------------DESKTOP------------------------*/
 @media (min-width: 1350px) and (max-width: 1532px) {
@@ -76,14 +77,6 @@
     font-weight: 700;
     font-size: 1.5rem;
   }
-
-  .mainEventos iframe {
-    width: 100%;
-    padding: 0 25px;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-  }
-
   .main #mainNosotros {
     text-align: center;
     font-size: 15px;

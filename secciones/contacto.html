@@ -17,37 +17,50 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg" style="background-color: #45546c;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../Img/Logo.png" alt="Logo">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <a href="../index.html"><img id="logotNotre" src="../Img/Logo.png" alt="Logo de Notrepatisserie"></a>
+              <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./tortas.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tortas
                   </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tortas.html">Tortas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="produccion.html">Producción</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                </div>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="./tortas.html">Cheesecake</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Lemon Pie</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Tarta Crema Pastelera y Frutillas</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Gâteau oreo</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Apple Crumble</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Brownies</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Tiramisu Cheesecake</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Dark Lemon Pie</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Carrot Cake</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Red Velvet</a></li>
+                    <li><a class="dropdown-item" href="./tortas.html">Flan al Caramelo</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./produccion.html">Producción</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main class="mainContact">
         <section class="conSection1">
             <h1 class="conTitulo">Contacto</h1>

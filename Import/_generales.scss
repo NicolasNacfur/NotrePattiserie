@@ -12,15 +12,59 @@ body {
 
 /*-------------------HEADER/NAV--------------------*/
 
-.header nav ul li a {
-  text-decoration: none;
-  color: #fffbcb;
-  font-size: 25px;
-  transition: color 0.2s ease-in-out;
-  &:hover {
-  color: black;
+.navbar {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  .navbar-nav {
+    padding-right: 120px;
+    height: 60px;
+    @media (max-width:767px) {
+      height: 235px;
+      justify-items: center;
+      display: contents;
+    }
+    @media (max-width:991px) {
+      height: 235px;
+      justify-items: center;
+      display: contents;
+    }
+  }
+  #logotNotre {
+    height: 100px;
+    margin: 0 0 0 120px;
+    @media (max-width:991px) {
+      display: none;
+    }
+  }
+  .container-fluid {
+    background-color: #45546c;
+    .dropdown-menu {
+      background-color: #45546c;;
+    }
+    .dropdown-item {
+      background-color: #45546c;;
+      color: #fffbcb ;
+      &:hover {
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+    }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      .nav-link {
+        color: #fffbcb;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
 }
-}
+
 /*-------------------FOOTER--------------------*/
 .footer {
   background-color: #45546c;
@@ -31,34 +75,14 @@ body {
   justify-content: space-evenly;
   padding: 2rem 15px;
 }
+
 .footer #footerT {
   text-decoration: none;
   color: #fffbcb;
   font-size: 25px;
   transition: color 0.2s ease-in-out;
+
   &:hover {
-    color: black; }
-}
-
-/*-----------------------LAYOUT------------------------*/
-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr auto 0.5fr;
-  grid-template-areas:
-    "header header"
-    "galeria galeria"
-    "footer footer";
-}
-
-header {
-  grid-area: header;
-}
-
-main {
-  grid-area: galeria;
-}
-
-footer {
-  grid-area: footer;
+    color: black;
+  }
 }
