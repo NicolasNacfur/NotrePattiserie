@@ -479,30 +479,6 @@ hgroup {
 
 /*-----------------------MEDIA QUERIES------------------------*/
 /*-----------------------DESKTOP------------------------*/
-@media (min-width: 1667px) and (max-width: 1829px) {
-  .site-container {
-    max-width: 1580px;
-  }
-}
-
-@media (min-width: 1350px) and (max-width: 1532px) {
-  .site-container {
-    max-width: 1270px;
-  }
-}
-
-@media (min-width: 1020px) and (max-width: 1234px) {
-  .site-container {
-    max-width: 940px;
-  }
-}
-
-@media (min-width: 902px) and (max-width: 938px) {
-  .site-container {
-    max-width: 620px;
-  }
-}
-
 @media (min-width: 900px) {
   .main {
     max-width: 1200px;
@@ -605,20 +581,11 @@ hgroup {
         -ms-flex-align: center;
             align-items: center;
   }
-  .site-container {
-    max-width: 608px;
-  }
-  .article-card {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 220px 1fr;
-        grid-template-rows: 220px 1fr;
-  }
 }
 
-@media (max-width: 900px) and (min-width: 300px) and (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 300px) and (max-width: 679px) {
   .site-container {
-    max-width: 280px;
+    max-width: 608px;
   }
   .article-card {
     display: -ms-grid;
