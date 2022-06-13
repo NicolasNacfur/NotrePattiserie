@@ -1,44 +1,40 @@
-$tortas:(
-    oreo: Brown,
+$tortas:(oreo: Brown,
     apple: Green,
     carrot: orange,
 );
-@each $tor, $color in $tortas {
-    .tortas--#{$tor}{
+@each $tor,
+$color in $tortas {
+    .tortas--#{$tor} {
         background-color: $color;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 2px solid black;
     }
-    
+
 }
 .imagenTor {
     border: 2px solid black;
     padding: 20px 20px 20px 20px;
     margin: 60px 40px 80px 40px;
 }
-
-.imagenTor--one{
+.imagenTor--one {
     @extend.imagenTor;
     border: 4px dashed brown;
 
 }
-.imagenTor--two{
+.imagenTor--two {
     @extend.imagenTor;
     border: 4px dashed green;
-    }
-
-.imagenTor--three{
+}
+.imagenTor--three {
     @extend.imagenTor;
-        border: 4px dashed orange;
-    }
-
-@mixin sizes ($width,$height) {
+    border: 4px dashed orange;
+}
+@mixin sizes ($width, $height) {
     height: $height;
     width: $width;
 }
-
-.my_mixin{
-    @include sizes (300px,300px);
+.my_mixin {
+    @include sizes (300px, 300px);
 }
