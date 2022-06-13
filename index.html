@@ -18,46 +18,31 @@
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light ">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navBar" style="background-color: #45546c;">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./Img/Logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <a href="index.html"><img id="logotNotre" src="./Img/Logo.png" alt="Logo de Notrepatisserie"></a>
-          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+            <li class="nav-item boton">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="./secciones/tortas.html" id="navbarScrollingDropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tortas
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Cheesecake</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Lemon Pie</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Tarta Crema Pastelera y Frutillas</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Torta Brownie</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Gâteau oreo</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Apple Crumble</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Brownies</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Tiramisu Cheesecake</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Dark Lemon Pie</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Carrot Cake</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Red Velvet</a></li>
-                <li><a class="dropdown-item" href="./secciones/tortas.html">Flan al Caramelo</a></li>
-              </ul>
+            <li class="nav-item boton">
+              <a class="nav-link" href="./secciones/tortas.html">Tortas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./secciones/produccion.html">Producción</a>
+            <li class="nav-item boton">
+              <a class="nav-link" href="./secciones/produccion.html">Produccion</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item boton">
               <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item boton">
               <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
             </li>
           </ul>
@@ -77,57 +62,57 @@
         eventos, tortas para casamiento y mucho más.
       </h2>
     </section>
-    <h2 class="Titulo">Nuestras Mejores Tortas</h2>
-    <div class="site-container">
-      <div class="article-container">
-        <article class="article-card">
-          <figure class="article-image">
-            <img src="./Img/Cheesecake Index.jpg" alt="Cheesecake">
-          </figure>
-          <div class="article-content">
-            <h3 class="card-title">Cheesecake</h3>
-            <a class="boton" href="./secciones/tortas.html">Ver mas</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <figure class="article-image">
-            <img src="./Img/Lemon Pie Index.jpg" alt="Lemon Pie">
-          </figure>
-          <div class="article-content">
-            <h3 class="card-title">Lemon Pie</h3>
-            <a class="boton" href="./secciones/tortas.html">Ver mas</a>
-          </div>
-        </article>
-        <article class="article-card">
-          <figure class="article-image">
-            <img src="./Img/Brownie Index.jpg" alt="Brownie">
-          </figure>
-          <div class="article-content">
-            <h3 class="card-title">Brownie</h3>
-            <a class="boton" href="./secciones/tortas.html">Ver mas</a>
-          </div>
-        </article>
+    <section>
+      <h2 class="Titulo">Nuestras Mejores Tortas</h2>
+      <div class="site-container">
+        <div class="article-container">
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="./Img/CheesecakeIndex.jpg" alt="Cheesecake">
+            </figure>
+            <div class="article-content">
+              <h3 class="card-title">Cheesecake</h3>
+              <a class="boton" href="./secciones/tortas.html">Ver mas</a>
+            </div>
+          </article>
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="./Img/LemonPieIndex.jpg" alt="Lemon Pie">
+            </figure>
+            <div class="article-content">
+              <h3 class="card-title">Lemon Pie</h3>
+              <a class="boton" href="./secciones/tortas.html">Ver mas</a>
+            </div>
+          </article>
+          <article class="article-card">
+            <figure class="article-image">
+              <img src="./Img/BrownieIndex.jpg" alt="Brownie">
+            </figure>
+            <div class="article-content">
+              <h3 class="card-title">Brownie</h3>
+              <a class="boton" href="./secciones/tortas.html">Ver mas</a>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-    <p>Tortas elaboradas con mucho amor y dedicacion. Nuestros 3 pilares en Notrepatisserie son el Lemon Pie, El
-      Cheesecake y El Brownie con dulce de leche y merengue italiano. Que estas esperando para deleitarte con nuestras
-      delicias culinarias?</p>
-    <h4 class="tortas--oreo">Gateau Oreo</h4>
-    <h4 class="tortas--apple">Apple Crumble</h4>
-    <h4 class="tortas--carrot">Carrot Cake</h4>
-    <img class="imagenTor--one my_mixin" src="./Img/imgOreo.jpg" alt="Imagen de torta oreo">
-    <img class="imagenTor--two my_mixin" src="./Img/imgApple.jpg" alt="Imagen de torta de manzana">
-    <img class="imagenTor--three my_mixin" src="./Img/imgCarrot.jpg" alt="Imagen de torta de zanahoria">
+      <p>Tortas elaboradas con mucho amor y dedicacion. Nuestros 3 pilares en Notrepatisserie son el Lemon Pie, El
+        Cheesecake y El Brownie con dulce de leche y merengue italiano. Que estas esperando para deleitarte con nuestras
+        delicias culinarias?</p>
+      <h4 class="tortas--oreo">Gateau Oreo</h4>
+      <h4 class="tortas--apple">Apple Crumble</h4>
+      <h4 class="tortas--carrot">Carrot Cake</h4>
+      <img class="imagenTor--one my_mixin" src="./Img/imgOreo.jpg" alt="Imagen de torta oreo">
+      <img class="imagenTor--two my_mixin" src="./Img/imgApple.jpg" alt="Imagen de torta de manzana">
+      <img class="imagenTor--three my_mixin" src="./Img/imgCarrot.jpg" alt="Imagen de torta de zanahoria">
     </section>
-    </div>
   </main>
   <footer class="footer">
     <div>
-      <a href="https://www.instagram.com/notre.pattiserie/"><img src="./Img/Instagram logo.png"
+      <a href="https://www.instagram.com/notre.pattiserie/"><img src="./Img/Instagramlogo.png"
           alt="Instagram logo"></a>
       <a href="https://api.whatsapp.com/send?phone=1130977794&text=Hola, quisiera un listado de precios"><img
-          src="./Img/whatsapp logo.png" alt="Whatsapp logo"></a>
-      <a href="https://es-la.facebook.com/Notrepatisserie/?ref=page_internal"><img src="./Img/Facebook logo.png"
+          src="./Img/whatsapplogo.png" alt="Whatsapp logo"></a>
+      <a href="https://es-la.facebook.com/Notrepatisserie/?ref=page_internal"><img src="./Img/Facebooklogo.png"
           alt="Facebook logo"></a>
     </div>
 
