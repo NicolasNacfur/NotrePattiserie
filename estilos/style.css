@@ -122,11 +122,47 @@ body {
   color: black;
 }
 
+.imagenTor, .imagenTor--one, .imagenTor--two, .imagenTor--three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0.5;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.imagenTor:hover, .imagenTor--one:hover, .imagenTor--two:hover, .imagenTor--three:hover {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.my_mixin {
+  height: 300px;
+  width: 300px;
+}
+
 .tortas--oreo {
   background-color: Brown;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -141,6 +177,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -155,6 +195,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -162,40 +206,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border: 2px solid black;
-}
-
-.imagenTor, .imagenTor--one, .imagenTor--two, .imagenTor--three {
-  border: 2px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.imagenTor--one {
-  border: 4px dashed brown;
-}
-
-.imagenTor--two {
-  border: 4px dashed green;
-}
-
-.imagenTor--three {
-  border: 4px dashed orange;
-}
-
-.my_mixin {
-  height: 300px;
-  width: 300px;
 }
 
 /*-----------------------INDEX------------------------*/
