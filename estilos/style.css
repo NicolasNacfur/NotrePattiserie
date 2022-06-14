@@ -504,7 +504,9 @@ p {
   text-align: center;
 }
 
-/-----------------------NOSOTROS------------------------/ .main #mainNosotros {
+/*-----------------------NOSOTROS------------------------*/ 
+
+.main #mainNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
