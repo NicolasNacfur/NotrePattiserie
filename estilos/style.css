@@ -504,8 +504,7 @@ p {
   text-align: center;
 }
 
-/*-----------------------NOSOTROS------------------------*/
-.main #mainNosotros {
+/-----------------------NOSOTROS------------------------/ .main #mainNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,6 +522,27 @@ p {
 
 hgroup {
   margin-bottom: 2rem;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-item img {
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /*-----------------------CONTACTO------------------------*/
