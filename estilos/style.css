@@ -132,21 +132,35 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 50px;
   margin-bottom: 50px;
-  opacity: 0.5;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
-.imagenTor:hover, .imagenTor--one:hover, .imagenTor--two:hover, .imagenTor--three:hover {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.imagenTor img, .imagenTor--one img, .imagenTor--two img, .imagenTor--three img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.imagenTor figure, .imagenTor--one figure, .imagenTor--two figure, .imagenTor--three figure {
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.imagenTor figure:hover > img, .imagenTor--one figure:hover > img, .imagenTor--two figure:hover > img, .imagenTor--three figure:hover > img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .my_mixin {

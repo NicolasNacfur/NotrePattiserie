@@ -2,16 +2,21 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 50px;
     margin-bottom: 50px;
-    opacity: 0.5;
-    transform: translateY(10px);
-    transition: all 0.5s ease-in-out;
-
-    &:hover {
-        opacity: 1;
-        transform: translateY(0);
+    img {
+       object-fit: cover;
+       object-position: center;
+       transition: all 0.3s ease-in-out;
+    }
+    figure {
+        overflow: hidden;
+        width: fit-content;
+        height: fit-content;
+    }
+    figure:hover > img {
+        transform: scale(1.1);
     }
 }
 
