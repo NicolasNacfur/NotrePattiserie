@@ -264,6 +264,12 @@ body {
   font-size: 50px;
 }
 
+.indexP {
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+
 /*-----------------------TORTAS------------------------*/
 .site-container {
   margin: 2rem;
@@ -498,13 +504,15 @@ body {
   opacity: 0.2;
 }
 
-p {
+.pasos p {
   width: 75%;
   margin: 0px auto;
   text-align: center;
 }
 
-/-----------------------NOSOTROS------------------------/ .main #mainNosotros {
+/*-----------------------NOSOTROS------------------------*/ 
+
+.main #mainNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,8 +541,6 @@ hgroup {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 3rem;
-  left: 0;
-  width: 100%;
 }
 
 .carousel-item img {
