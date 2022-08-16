@@ -1,10 +1,10 @@
 /*-----------------------TORTAS------------------------*/
-.site-container {
+#site-container {
   margin: 2rem;
   max-width: calc(100% - 80px);
 }
 .article-container {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
   gap: 2rem;
 }
